@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/czlai-go"
-	"github.com/stainless-sdks/czlai-go/internal/testutil"
-	"github.com/stainless-sdks/czlai-go/option"
+	"github.com/CZL-AI/czlai-go"
+	"github.com/CZL-AI/czlai-go/internal/testutil"
+	"github.com/CZL-AI/czlai-go/option"
 )
 
 func TestUserAdviceNew(t *testing.T) {

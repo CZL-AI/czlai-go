@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/stainless-sdks/czlai-go/internal/requestconfig"
-	"github.com/stainless-sdks/czlai-go/option"
+	"github.com/CZL-AI/czlai-go/internal/requestconfig"
+	"github.com/CZL-AI/czlai-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with
