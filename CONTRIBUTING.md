@@ -41,7 +41,7 @@ To use a local version of this library from source in another project, edit the 
 directive. This can be done through the CLI with the following:
 
 ```sh
-$ go mod edit -replace github.com/stainless-sdks/czlai-go=/path/to/czlai-go
+$ go mod edit -replace github.com/CZL-AI/czlai-go=/path/to/czlai-go
 ```
 
 ## Running tests

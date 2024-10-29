@@ -3,7 +3,7 @@
 package czlai
 
 import (
-	"github.com/stainless-sdks/czlai-go/internal/apierror"
+	"github.com/CZL-AI/czlai-go/internal/apierror"
 )
 
 type Error = apierror.Error
