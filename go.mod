@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/czlai-go
+module github.com/CZL-AI/czlai-go
 
 go 1.21
 

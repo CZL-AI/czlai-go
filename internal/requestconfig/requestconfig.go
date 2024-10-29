@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/czlai-go/internal"
-	"github.com/stainless-sdks/czlai-go/internal/apierror"
-	"github.com/stainless-sdks/czlai-go/internal/apiform"
-	"github.com/stainless-sdks/czlai-go/internal/apiquery"
+	"github.com/CZL-AI/czlai-go/internal"
+	"github.com/CZL-AI/czlai-go/internal/apierror"
+	"github.com/CZL-AI/czlai-go/internal/apiform"
+	"github.com/CZL-AI/czlai-go/internal/apiquery"
 )
 
 func getDefaultHeaders() map[string]string {

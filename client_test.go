@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/czlai-go"
-	"github.com/stainless-sdks/czlai-go/internal"
-	"github.com/stainless-sdks/czlai-go/option"
+	"github.com/CZL-AI/czlai-go"
+	"github.com/CZL-AI/czlai-go/internal"
+	"github.com/CZL-AI/czlai-go/option"
 )
 
 type closureTransport struct {

@@ -6,10 +6,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/czlai-go/internal/apijson"
-	"github.com/stainless-sdks/czlai-go/internal/param"
-	"github.com/stainless-sdks/czlai-go/internal/requestconfig"
-	"github.com/stainless-sdks/czlai-go/option"
+	"github.com/CZL-AI/czlai-go/internal/apijson"
+	"github.com/CZL-AI/czlai-go/internal/param"
+	"github.com/CZL-AI/czlai-go/internal/requestconfig"
+	"github.com/CZL-AI/czlai-go/option"
 )
 
 // WhitelistService contains methods and other services that help with interacting

@@ -10,11 +10,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stainless-sdks/czlai-go/internal/apiform"
-	"github.com/stainless-sdks/czlai-go/internal/apiquery"
-	"github.com/stainless-sdks/czlai-go/internal/param"
-	"github.com/stainless-sdks/czlai-go/internal/requestconfig"
-	"github.com/stainless-sdks/czlai-go/option"
+	"github.com/CZL-AI/czlai-go/internal/apiform"
+	"github.com/CZL-AI/czlai-go/internal/apiquery"
+	"github.com/CZL-AI/czlai-go/internal/param"
+	"github.com/CZL-AI/czlai-go/internal/requestconfig"
+	"github.com/CZL-AI/czlai-go/option"
 )
 
 // UploadImageService contains methods and other services that help with

@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stainless-sdks/czlai-go/internal/apijson"
-	"github.com/stainless-sdks/czlai-go/internal/apiquery"
-	"github.com/stainless-sdks/czlai-go/internal/param"
-	"github.com/stainless-sdks/czlai-go/internal/requestconfig"
-	"github.com/stainless-sdks/czlai-go/option"
+	"github.com/CZL-AI/czlai-go/internal/apijson"
+	"github.com/CZL-AI/czlai-go/internal/apiquery"
+	"github.com/CZL-AI/czlai-go/internal/param"
+	"github.com/CZL-AI/czlai-go/internal/requestconfig"
+	"github.com/CZL-AI/czlai-go/option"
 )
 
 // AIMemeService contains methods and other services that help with interacting
