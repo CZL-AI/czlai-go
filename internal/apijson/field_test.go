@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/czlai-go/internal/param"
+	"github.com/CZL-AI/czlai-go/internal/param"
 )
 
 type Struct struct {

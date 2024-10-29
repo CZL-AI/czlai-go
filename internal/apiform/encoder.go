@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/czlai-go/internal/param"
+	"github.com/CZL-AI/czlai-go/internal/param"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc
