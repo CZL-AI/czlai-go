@@ -32,7 +32,7 @@ func NewAipicExoticService(opts ...option.RequestOption) (r *AipicExoticService)
 }
 
 // 获取问题选项
-func (r *AipicExoticService) Options(ctx context.Context, body AipicExoticOptionsParams, opts ...option.RequestOption) (err error) {
+func (r *AipicExoticService) OptionsFunc(ctx context.Context, body AipicExoticOptionsParams, opts ...option.RequestOption) (err error) {
 	opts = append(r.Options[:], opts...)
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "")}, opts...)
 	path := "aipic-exotic/options"

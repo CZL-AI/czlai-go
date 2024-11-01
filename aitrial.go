@@ -32,7 +32,7 @@ func NewAITrialService(opts ...option.RequestOption) (r *AITrialService) {
 }
 
 // 获取问题选项
-func (r *AITrialService) Options(ctx context.Context, body AITrialOptionsParams, opts ...option.RequestOption) (err error) {
+func (r *AITrialService) OptionsFunc(ctx context.Context, body AITrialOptionsParams, opts ...option.RequestOption) (err error) {
 	opts = append(r.Options[:], opts...)
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "")}, opts...)
 	path := "ai-trial/options"

@@ -5,6 +5,7 @@ package czlai_test
 import (
 	"context"
 	"errors"
+	"fmt"
 	"os"
 	"testing"
 
@@ -188,12 +189,11 @@ func TestAICheckupSessionStart(t *testing.T) {
 		return
 	}
 	client := czlai.NewClient(
-		option.WithBaseURL(baseURL),
-		option.WithBearerToken("My Bearer Token"),
-		option.WithUsername("My Username"),
-		option.WithPassword("My Password"),
+		option.WithBaseURL("https://plaform-ms-ai.chongzhiling.com/api/v1.0/ai-b/"),
+		option.WithBearerToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcl9pZCI6IjEtMTExLTVkM2MyMzA2MzU5NzJjOGQyZThkZTQ5Yjc0Y2NkMTA0IiwiYXBpcyI6WyIvYWktY2hlY2t1cC9zZXNzaW9uLXN0YXJ0IiwiL3BldC1wcm9maWxlIiwiL3VwbG9hZC1pbWFnZS1vc3MiLCIvcGV0LXByb2ZpbGUvdmFyaWV0eSIsIi9wZXQtcHJvZmlsZXMiLCIvcGV0cy9wZXQtaW5mbyIsIi9wZXQtcHJvZmlsZS9leC1pbmZvIiwiL3Nlc3Npb24tcmVjb3JkL3Nlc3Npb24tc3RhcnQiLCIvc2Vzc2lvbi1yZWNvcmQiLCIvYWlkb2Mvb3B0aW9ucyIsIi9haWRvYy9pZi1jb250aW51ZS1hc2siLCIvYWlkb2Mvc3VtbWFyeSIsIi9haWRvYy9yZXBvcnQiLCIvYWlkb2MvcmVwb3J0LXRhc2siLCIvbWVkaWNhbC1yZWNvcmQiXSwidGltZXMiOjEwMCwiZXhwaXJlc19pbiI6ODY0MDAuMH0sImV4cCI6MTczMDQ0ODAyOCwianRpIjoiNTE0ODZhYjktYTY0MC00NDYwLThlNTMtMzE1YzRlMzNkZGQzIn0.G66BvcESqJRFcwFEFLoFs4eQNSvGOSTTKCRhU1ba4F0"),
 	)
-	_, err := client.AICheckup.SessionStart(context.TODO())
+	r, err := client.AICheckup.SessionStart(context.TODO())
+	fmt.Println(r.Data.SessionID)
 	if err != nil {
 		var apierr *czlai.Error
 		if errors.As(err, &apierr) {
@@ -213,8 +213,8 @@ func TestAICheckupSummaryWithOptionalParams(t *testing.T) {
 		return
 	}
 	client := czlai.NewClient(
-		option.WithBaseURL(baseURL),
-		option.WithBearerToken("My Bearer Token"),
+		option.WithBaseURL("https://plaform-ms-ai.chongzhiling.com/api/v1.0/ai-b"),
+		option.WithBearerToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcl9pZCI6IjEtMTExLTVkM2MyMzA2MzU5NzJjOGQyZThkZTQ5Yjc0Y2NkMTA0IiwiYXBpcyI6WyIvYWktY2hlY2t1cC9zZXNzaW9uLXN0YXJ0IiwiL2FpLWNoZWNrdXAvc2Vzc2lvbi1zdGFydCIsIi9wZXQtcHJvZmlsZSIsIi91cGxvYWQtaW1hZ2Utb3NzIiwiL3BldC1wcm9maWxlL3ZhcmlldHkiLCIvcGV0LXByb2ZpbGVzIiwiL3BldHMvcGV0LWluZm8iLCIvcGV0LXByb2ZpbGUvZXgtaW5mbyIsIi9zZXNzaW9uLXJlY29yZC9zZXNzaW9uLXN0YXJ0IiwiL3Nlc3Npb24tcmVjb3JkIiwiL2FpZG9jL29wdGlvbnMiLCIvYWlkb2MvaWYtY29udGludWUtYXNrIiwiL2FpZG9jL3N1bW1hcnkiLCIvYWlkb2MvcmVwb3J0IiwiL2FpZG9jL3JlcG9ydC10YXNrIiwiL21lZGljYWwtcmVjb3JkIl0sInRpbWVzIjoxMDAsImV4cGlyZXNfaW4iOjg2NDAwLjB9LCJleHAiOjE3MzA0NDQ4MDcsImp0aSI6IjRmZmE3MTBhLTg0Y2MtNGNkZS1iN2FhLTA0NzYyYzk2YTU1MSJ9.Bb3duFbM9NEyAZlnE0QcajNPQz-we8uGydpm-MNWlKk"),
 		option.WithUsername("My Username"),
 		option.WithPassword("My Password"),
 	)
@@ -222,6 +222,7 @@ func TestAICheckupSummaryWithOptionalParams(t *testing.T) {
 		PetProfileID: czlai.F(int64(0)),
 		SessionID:    czlai.F("session_id"),
 	})
+
 	if err != nil {
 		var apierr *czlai.Error
 		if errors.As(err, &apierr) {
