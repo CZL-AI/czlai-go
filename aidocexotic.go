@@ -57,7 +57,7 @@ func (r *AidocExoticService) Keywords(ctx context.Context, body AidocExoticKeywo
 }
 
 // 获取问题选项
-func (r *AidocExoticService) Options(ctx context.Context, body AidocExoticOptionsParams, opts ...option.RequestOption) (res *string, err error) {
+func (r *AidocExoticService) OptionsFunc(ctx context.Context, body AidocExoticOptionsParams, opts ...option.RequestOption) (res *string, err error) {
 	opts = append(r.Options[:], opts...)
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "text/event-stream")}, opts...)
 	path := "aidoc-exotic/options"

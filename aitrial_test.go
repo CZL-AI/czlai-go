@@ -27,7 +27,7 @@ func TestAITrialOptionsWithOptionalParams(t *testing.T) {
 		option.WithUsername("My Username"),
 		option.WithPassword("My Password"),
 	)
-	err := client.AITrials.Options(context.TODO(), czlai.AITrialOptionsParams{
+	err := client.AITrials.OptionsFunc(context.TODO(), czlai.AITrialOptionsParams{
 		Question:    czlai.F("question"),
 		ServiceType: czlai.F(int64(0)),
 		SessionID:   czlai.F("session_id"),

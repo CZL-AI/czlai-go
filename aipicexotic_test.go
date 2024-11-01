@@ -27,7 +27,7 @@ func TestAipicExoticOptionsWithOptionalParams(t *testing.T) {
 		option.WithUsername("My Username"),
 		option.WithPassword("My Password"),
 	)
-	err := client.AipicExotics.Options(context.TODO(), czlai.AipicExoticOptionsParams{
+	err := client.AipicExotics.OptionsFunc(context.TODO(), czlai.AipicExoticOptionsParams{
 		PetProfileID: czlai.F(int64(0)),
 		Question:     czlai.F("question"),
 		SessionID:    czlai.F("session_id"),

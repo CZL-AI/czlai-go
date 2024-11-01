@@ -111,7 +111,7 @@ func TestAidocExoticOptionsWithOptionalParams(t *testing.T) {
 		option.WithUsername("My Username"),
 		option.WithPassword("My Password"),
 	)
-	_, err := client.AidocExotic.Options(context.TODO(), czlai.AidocExoticOptionsParams{
+	_, err := client.AidocExotic.OptionsFunc(context.TODO(), czlai.AidocExoticOptionsParams{
 		PetProfileID: czlai.F(int64(0)),
 		Question:     czlai.F("question"),
 		SessionID:    czlai.F("session_id"),
