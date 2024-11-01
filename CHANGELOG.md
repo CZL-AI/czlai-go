@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.1 (2024-11-01)
+
+Full Changelog: [v0.0.1-alpha.1...v0.1.0-alpha.1](https://github.com/CZL-AI/czlai-go/compare/v0.0.1-alpha.1...v0.1.0-alpha.1)
+
+### Features
+
+* fix ([7e4d413](https://github.com/CZL-AI/czlai-go/commit/7e4d41353fa80d0095633c52b9177b59dcccb6cd))
+
 ## 0.0.1-alpha.1 (2024-10-29)
 
 Full Changelog: [v0.0.1-alpha.0...v0.0.1-alpha.1](https://github.com/CZL-AI/czlai-go/compare/v0.0.1-alpha.0...v0.0.1-alpha.1)
