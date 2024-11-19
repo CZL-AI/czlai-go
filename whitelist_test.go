@@ -54,7 +54,7 @@ func TestWhitelistSaveDataWithOptionalParams(t *testing.T) {
 		option.WithPassword("My Password"),
 	)
 	err := client.Whitelist.SaveData(context.TODO(), czlai.WhitelistSaveDataParams{
-		SaveData: czlai.F([]string{"string", "string", "string"}),
+		SaveData: czlai.F([]string{"string"}),
 	})
 	if err != nil {
 		var apierr *czlai.Error
