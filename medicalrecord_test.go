@@ -86,9 +86,9 @@ func TestMedicalRecordNewListWithOptionalParams(t *testing.T) {
 	)
 	_, err := client.MedicalRecords.NewList(context.TODO(), czlai.MedicalRecordNewListParams{
 		Limit:        czlai.F(int64(0)),
-		ModuleType:   czlai.F([]int64{int64(0), int64(0), int64(0)}),
+		ModuleType:   czlai.F([]int64{int64(0)}),
 		Page:         czlai.F(int64(0)),
-		PetProfileID: czlai.F([]int64{int64(0), int64(0), int64(0)}),
+		PetProfileID: czlai.F([]int64{int64(0)}),
 	})
 	if err != nil {
 		var apierr *czlai.Error

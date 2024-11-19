@@ -30,7 +30,7 @@ func TestUserAdviceNew(t *testing.T) {
 	err := client.UserAdvices.New(context.TODO(), czlai.UserAdviceNewParams{
 		AdviceType:  czlai.F("advice_type"),
 		Description: czlai.F("description"),
-		ImageList:   czlai.F([]string{"string", "string", "string"}),
+		ImageList:   czlai.F([]string{"string"}),
 	})
 	if err != nil {
 		var apierr *czlai.Error
